@@ -18,12 +18,12 @@ import java.util.Properties;
 @Configuration
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
-public class HibernateUtil {
+public class HibernateConfig {
 
 
     private final Environment env;
     @Autowired
-    public HibernateUtil(Environment env) {
+    public HibernateConfig(Environment env) {
         this.env = env;
     }
 
